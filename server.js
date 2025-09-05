@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3000;
 // Serve static files from the build directory
 app.use(express.static(path.join(__dirname, 'build')));
 
-// Handle React Router (catch all handler)
-app.get('*', (req, res) => {
+// Handle React Router (catch all handler) - using a more compatible pattern
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
