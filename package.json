@@ -13,6 +13,7 @@
     "start": "node server.js",
     "dev": "react-scripts start",
     "build": "react-scripts build",
+    "render-build": "npm install && npm run build",
     "postinstall": "echo 'Dependencies installed successfully'"
   },
   "devDependencies": {},
