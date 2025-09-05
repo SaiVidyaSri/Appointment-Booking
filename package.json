@@ -12,7 +12,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "postinstall": "echo 'Dependencies installed successfully'"
   },
   "devDependencies": {},
   "browserslist": {
